@@ -7,7 +7,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "sreeterraformbucket"
+    bucket = "sujinidevopsbucket"
     key    = "azuredevopsb14.tfstate"
     region = "us-east-1"
   }
@@ -18,7 +18,7 @@ resource "aws_vpc" "default" {
     enable_dns_hostnames = true
     tags = {
         Name = "${var.vpc_name}"
-	Owner = "Sreeharsha Veerapalli"
+	Owner = "sujani Veerapalli"
 	environment = "${var.environment}"
     }
 }
